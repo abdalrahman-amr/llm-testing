@@ -1,0 +1,883 @@
+{
+  "summary": {
+    "total_samples": 1664,
+    "models_evaluated": [
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "best_performing_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "most_consistent_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "fastest_model": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+    "avg_code_complexity": 16.18028846153846,
+    "avg_code_lines": 23.458533653846153,
+    "avg_functions_per_sample": 1.4735576923076923,
+    "avg_classes_per_sample": 0.03665865384615385,
+    "dataset_size": 1664,
+    "dataset_quality": "High"
+  },
+  "model_comparison": {
+    "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+      "overall_pass_rate": 0.37713854411271386,
+      "total_tests": 11924,
+      "passed_tests": 4497,
+      "failed_tests": 7427,
+      "efficiency_ratio": 0.37713854411271386,
+      "consistency_score": 0.21277671123082753,
+      "pass_rate_std": 0.281052799061184,
+      "pass_rate_range": 1.0,
+      "avg_execution_time": null,
+      "time_per_test": null,
+      "performance_score": 0.2286924216036997,
+      "ranking_score": 0.29011613983687656,
+      "overall_rank": 4
+    },
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "overall_pass_rate": 0.5266462860447823,
+      "total_tests": 12103,
+      "passed_tests": 6374,
+      "failed_tests": 5729,
+      "efficiency_ratio": 0.5266462860447823,
+      "consistency_score": 0.266942515759404,
+      "pass_rate_std": 0.34863980523794286,
+      "pass_rate_range": 1.0,
+      "avg_execution_time": null,
+      "time_per_test": null,
+      "performance_score": 0.3336152852784615,
+      "ranking_score": 0.39607052635469053,
+      "overall_rank": 3
+    },
+    "Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "overall_pass_rate": 0.5175753527594557,
+      "total_tests": 11977,
+      "passed_tests": 6199,
+      "failed_tests": 5778,
+      "efficiency_ratio": 0.5175753527594557,
+      "consistency_score": 0.34775977932484325,
+      "pass_rate_std": 0.3481808586905513,
+      "pass_rate_range": 1.0,
+      "avg_execution_time": null,
+      "time_per_test": null,
+      "performance_score": 0.3487836216095309,
+      "ranking_score": 0.41487314545312637,
+      "overall_rank": 2
+    },
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+      "overall_pass_rate": 0.3866147437058504,
+      "total_tests": 11042,
+      "passed_tests": 4269,
+      "failed_tests": 6773,
+      "efficiency_ratio": 0.3866147437058504,
+      "consistency_score": 0.062141717944312,
+      "pass_rate_std": 0.31723985279546857,
+      "pass_rate_range": 1.0,
+      "avg_execution_time": null,
+      "time_per_test": null,
+      "performance_score": 0.20531982403116592,
+      "ranking_score": 0.25061136160680386,
+      "overall_rank": 5
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "overall_pass_rate": 0.5695493982647635,
+      "total_tests": 14292,
+      "passed_tests": 8140,
+      "failed_tests": 6152,
+      "efficiency_ratio": 0.5695493982647635,
+      "consistency_score": 0.5007472953681815,
+      "pass_rate_std": 0.27480406061842866,
+      "pass_rate_range": 1.0,
+      "avg_execution_time": null,
+      "time_per_test": null,
+      "performance_score": 0.4273748595122095,
+      "ranking_score": 0.4919538275693125,
+      "overall_rank": 1
+    }
+  },
+  "error_analysis": {
+    "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+      "error_counts": {
+        "AssertionError": 1934,
+        "ValueError": 2316,
+        "Expected Exception Not Raised": 1985,
+        "TypeError": 2594,
+        "IndexError": 1287,
+        "NameError": 550,
+        "AttributeError": 199,
+        "ZeroDivisionError": 215,
+        "SyntaxError": 46,
+        "RecursionError": 42,
+        "ImportError": 38,
+        "RuntimeError": 13,
+        "StopIteration": 20,
+        "KeyError": 131,
+        "OSError": 2,
+        "IndentationError": 1
+      },
+      "total_errors": 11373,
+      "error_rate": 0.9537906742703791,
+      "error_percentages": {
+        "AssertionError": 17.005187725314343,
+        "ValueError": 20.364020047480878,
+        "Expected Exception Not Raised": 17.45361821858788,
+        "TypeError": 22.808405873560186,
+        "IndexError": 11.316275389079399,
+        "NameError": 4.836015123538204,
+        "AttributeError": 1.7497581992438231,
+        "ZeroDivisionError": 1.8904422755649346,
+        "SyntaxError": 0.4044667194231953,
+        "RecursionError": 0.3692957003429174,
+        "ImportError": 0.3341246812626396,
+        "RuntimeError": 0.11430581201090301,
+        "StopIteration": 0.17585509540138927,
+        "KeyError": 1.1518508748790997,
+        "OSError": 0.017585509540138926,
+        "IndentationError": 0.008792754770069463
+      },
+      "most_common_error": "TypeError",
+      "unique_error_types": 16,
+      "error_diversity": 0.001406840763211114,
+      "error_entropy": 2.799818475023944,
+      "error_patterns": {
+        "assertion_errors_dominant": false,
+        "type_errors_significant": true,
+        "syntax_issues_present": false,
+        "logic_errors_dominant": false
+      }
+    },
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "error_counts": {
+        "AssertionError": 907,
+        "ValueError": 1849,
+        "TypeError": 1307,
+        "Expected Exception Not Raised": 1516,
+        "NameError": 5958,
+        "IndexError": 974,
+        "ZeroDivisionError": 166,
+        "KeyError": 52,
+        "RecursionError": 16,
+        "SyntaxError": 15,
+        "AttributeError": 92,
+        "StopIteration": 11,
+        "RuntimeError": 1,
+        "IndentationError": 5,
+        "ImportError": 8
+      },
+      "total_errors": 12877,
+      "error_rate": 1.0639510865074775,
+      "error_percentages": {
+        "AssertionError": 7.043566047992544,
+        "ValueError": 14.35893453444125,
+        "TypeError": 10.149879630348684,
+        "Expected Exception Not Raised": 11.772928477129767,
+        "NameError": 46.26854080919468,
+        "IndexError": 7.563873573037198,
+        "ZeroDivisionError": 1.2891201366777976,
+        "KeyError": 0.40382076570629805,
+        "RecursionError": 0.12425254329424555,
+        "SyntaxError": 0.11648675933835521,
+        "AttributeError": 0.7144521239419119,
+        "StopIteration": 0.08542362351479382,
+        "RuntimeError": 0.007765783955890347,
+        "IndentationError": 0.038828919779451736,
+        "ImportError": 0.062126271647122776
+      },
+      "most_common_error": "NameError",
+      "unique_error_types": 15,
+      "error_diversity": 0.0011648675933835521,
+      "error_entropy": 2.3742949052453026,
+      "error_patterns": {
+        "assertion_errors_dominant": false,
+        "type_errors_significant": false,
+        "syntax_issues_present": false,
+        "logic_errors_dominant": false
+      }
+    },
+    "Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "error_counts": {
+        "AssertionError": 3337,
+        "TypeError": 1588,
+        "Expected Exception Not Raised": 3558,
+        "ValueError": 3608,
+        "IndexError": 1522,
+        "AttributeError": 143,
+        "ZeroDivisionError": 153,
+        "RecursionError": 57,
+        "SyntaxError": 45,
+        "NameError": 280,
+        "KeyError": 77,
+        "StopIteration": 12,
+        "RuntimeError": 2,
+        "ImportError": 16
+      },
+      "total_errors": 14398,
+      "error_rate": 1.202137430074309,
+      "error_percentages": {
+        "AssertionError": 23.17683011529379,
+        "TypeError": 11.029309626336993,
+        "Expected Exception Not Raised": 24.711765522989303,
+        "ValueError": 25.059035977219057,
+        "IndexError": 10.570912626753715,
+        "AttributeError": 0.9931934990970969,
+        "ZeroDivisionError": 1.0626475899430476,
+        "RecursionError": 0.3958883178219197,
+        "SyntaxError": 0.3125434088067787,
+        "NameError": 1.9447145436866229,
+        "KeyError": 0.5347964995138214,
+        "StopIteration": 0.083344909015141,
+        "RuntimeError": 0.013890818169190166,
+        "ImportError": 0.11112654535352133
+      },
+      "most_common_error": "ValueError",
+      "unique_error_types": 14,
+      "error_diversity": 0.0009723572718433116,
+      "error_entropy": 2.5465120091156876,
+      "error_patterns": {
+        "assertion_errors_dominant": false,
+        "type_errors_significant": false,
+        "syntax_issues_present": false,
+        "logic_errors_dominant": false
+      }
+    },
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+      "error_counts": {
+        "NameError": 4336,
+        "AssertionError": 1665,
+        "TypeError": 1137,
+        "SyntaxError": 97,
+        "Expected Exception Not Raised": 2013,
+        "ValueError": 2457,
+        "ImportError": 28,
+        "IndexError": 1245,
+        "AttributeError": 141,
+        "ZeroDivisionError": 119,
+        "IndentationError": 7,
+        "RecursionError": 35,
+        "KeyError": 105,
+        "RuntimeError": 10,
+        "StopIteration": 14,
+        "Value Mismatch": 6
+      },
+      "total_errors": 13415,
+      "error_rate": 1.2149067197971382,
+      "error_percentages": {
+        "NameError": 32.32202758106597,
+        "AssertionError": 12.41147968691763,
+        "TypeError": 8.475587029444652,
+        "SyntaxError": 0.7230711889675736,
+        "Expected Exception Not Raised": 15.005590756615728,
+        "ValueError": 18.315318673127095,
+        "ImportError": 0.20872158032053673,
+        "IndexError": 9.280655982109579,
+        "AttributeError": 1.0510622437569883,
+        "ZeroDivisionError": 0.8870667163622811,
+        "IndentationError": 0.05218039508013418,
+        "RecursionError": 0.2609019754006709,
+        "KeyError": 0.7827059262020127,
+        "RuntimeError": 0.07454342154304883,
+        "StopIteration": 0.10436079016026836,
+        "Value Mismatch": 0.0447260529258293
+      },
+      "most_common_error": "NameError",
+      "unique_error_types": 16,
+      "error_diversity": 0.0011926947446887811,
+      "error_entropy": 2.6849404576578304,
+      "error_patterns": {
+        "assertion_errors_dominant": false,
+        "type_errors_significant": false,
+        "syntax_issues_present": false,
+        "logic_errors_dominant": false
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "error_counts": {
+        "AssertionError": 1565,
+        "TypeError": 1654,
+        "Expected Exception Not Raised": 2592,
+        "ValueError": 2828,
+        "IndexError": 1256,
+        "ImportError": 58,
+        "ZeroDivisionError": 139,
+        "AttributeError": 120,
+        "SyntaxError": 9,
+        "KeyError": 110,
+        "RecursionError": 45,
+        "NameError": 198,
+        "RuntimeError": 3,
+        "StopIteration": 6
+      },
+      "total_errors": 10583,
+      "error_rate": 0.7404841869577385,
+      "error_percentages": {
+        "AssertionError": 14.787867334404234,
+        "TypeError": 15.628838703581216,
+        "Expected Exception Not Raised": 24.492109987716148,
+        "ValueError": 26.72210148351129,
+        "IndexError": 11.868090333553813,
+        "ImportError": 0.5480487574411792,
+        "ZeroDivisionError": 1.313427194557309,
+        "AttributeError": 1.1338939809127848,
+        "SyntaxError": 0.08504204856845886,
+        "KeyError": 1.0394028158367192,
+        "RecursionError": 0.42521024284229425,
+        "NameError": 1.8709250685060945,
+        "RuntimeError": 0.028347349522819615,
+        "StopIteration": 0.05669469904563923
+      },
+      "most_common_error": "ValueError",
+      "unique_error_types": 14,
+      "error_diversity": 0.0013228763110649155,
+      "error_entropy": 2.621090101939231,
+      "error_patterns": {
+        "assertion_errors_dominant": false,
+        "type_errors_significant": false,
+        "syntax_issues_present": false,
+        "logic_errors_dominant": false
+      }
+    }
+  },
+  "complexity_insights": {
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "avg_complexity": 16.18028846153846,
+      "median_complexity": 13.0,
+      "complexity_std": 11.52220563811506,
+      "complexity_correlations": {
+        "complexity": 0.08117454444247668,
+        "cyclomatic_complexity": 0.026098350577638523,
+        "code_lines": 0.05607163468172833,
+        "code_chars": 0.0433365836153614,
+        "functions_count": 0.04393733872683867,
+        "classes_count": 0.019903932952280406
+      },
+      "pass_rates_by_segment": {
+        "Low": 0.4617495722286141,
+        "Medium-Low": 0.42928912335336916,
+        "Medium-High": 0.49019606373620966,
+        "High": 0.520051972843851
+      },
+      "best_performing_segment": "High",
+      "performance_drop_in_high_complexity": false,
+      "optimal_complexity_range": {
+        "min": 3,
+        "max": 107,
+        "samples_in_range": 141
+      }
+    },
+    "Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "avg_complexity": 16.18028846153846,
+      "median_complexity": 13.0,
+      "complexity_std": 11.52220563811506,
+      "complexity_correlations": {
+        "complexity": 0.05263217110655147,
+        "cyclomatic_complexity": 0.0221594423980892,
+        "code_lines": 0.051272558662123234,
+        "code_chars": 0.05664336265416724,
+        "functions_count": 0.025025517340619745,
+        "classes_count": 0.005376542830527109
+      },
+      "pass_rates_by_segment": {
+        "Low": 0.5377694947349755,
+        "Medium-Low": 0.4872982697005043,
+        "Medium-High": 0.5265628252049462,
+        "High": 0.578652089466885
+      },
+      "best_performing_segment": "High",
+      "performance_drop_in_high_complexity": false,
+      "optimal_complexity_range": {
+        "min": 3,
+        "max": 107,
+        "samples_in_range": 424
+      }
+    },
+    "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+      "avg_complexity": 16.18028846153846,
+      "median_complexity": 13.0,
+      "complexity_std": 11.52220563811506,
+      "complexity_correlations": {
+        "complexity": -0.18329760624826208,
+        "cyclomatic_complexity": -0.16375389411660415,
+        "code_lines": -0.15801157676635744,
+        "code_chars": -0.16310935692860318,
+        "functions_count": -0.023425794785880666,
+        "classes_count": -0.009673417607806614
+      },
+      "pass_rates_by_segment": {
+        "Low": 0.4448805242218416,
+        "Medium-Low": 0.3664224509196576,
+        "Medium-High": 0.3221344619154838,
+        "High": 0.27313738151301603
+      },
+      "best_performing_segment": "Low",
+      "performance_drop_in_high_complexity": true,
+      "optimal_complexity_range": {
+        "min": 4,
+        "max": 107,
+        "samples_in_range": 87
+      }
+    },
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+      "avg_complexity": 16.18028846153846,
+      "median_complexity": 13.0,
+      "complexity_std": 11.52220563811506,
+      "complexity_correlations": {
+        "complexity": -0.007352124629580721,
+        "cyclomatic_complexity": 0.022548688232633174,
+        "code_lines": -0.016766487591300457,
+        "code_chars": -0.01829446948544017,
+        "functions_count": -0.01430465097978397,
+        "classes_count": -0.006309184440799505
+      },
+      "pass_rates_by_segment": {
+        "Low": 0.321758375800292,
+        "Medium-Low": 0.3603566669209128,
+        "Medium-High": 0.34718657255153607,
+        "High": 0.3298532144922859
+      },
+      "best_performing_segment": "Medium-Low",
+      "performance_drop_in_high_complexity": true,
+      "optimal_complexity_range": {
+        "min": 3,
+        "max": 59,
+        "samples_in_range": 120
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "avg_complexity": 16.18028846153846,
+      "median_complexity": 13.0,
+      "complexity_std": 11.52220563811506,
+      "complexity_correlations": {
+        "complexity": -0.06343401447084622,
+        "cyclomatic_complexity": -0.05214522125118164,
+        "code_lines": -0.04758917990426872,
+        "code_chars": -0.055494375852220355,
+        "functions_count": 0.014106325709999052,
+        "classes_count": 0.025012264514238533
+      },
+      "pass_rates_by_segment": {
+        "Low": 0.6034320746895597,
+        "Medium-Low": 0.537440097146801,
+        "Medium-High": 0.5165811108329357,
+        "High": 0.5301496797055172
+      },
+      "best_performing_segment": "Low",
+      "performance_drop_in_high_complexity": true,
+      "optimal_complexity_range": {
+        "min": 3,
+        "max": 75,
+        "samples_in_range": 174
+      }
+    }
+  },
+  "pynguin_comparison": {},
+  "code_characteristics": {
+    "code_lines": {
+      "min": 2,
+      "max": 203,
+      "mean": 23.458533653846153,
+      "median": 18.0,
+      "std": 19.349038729944848,
+      "quartiles": [
+        11.0,
+        18.0,
+        29.0
+      ]
+    },
+    "code_chars": {
+      "min": 45,
+      "max": 6727,
+      "mean": 669.1286057692307,
+      "median": 514.0,
+      "std": 582.333665421838,
+      "quartiles": [
+        319.0,
+        514.0,
+        815.5
+      ]
+    },
+    "code_complexity": {
+      "min": 3,
+      "max": 107,
+      "mean": 16.18028846153846,
+      "median": 13.0,
+      "std": 11.518742916582884,
+      "quartiles": [
+        9.0,
+        13.0,
+        20.0
+      ]
+    },
+    "cyclomatic_complexity": {
+      "min": 1.0,
+      "max": 45.0,
+      "mean": 5.818041807629632,
+      "median": 4.333333333333334,
+      "std": 4.811080576807391,
+      "quartiles": [
+        3.0,
+        4.333333333333334,
+        7.0
+      ]
+    },
+    "functions_count": {
+      "min": 1,
+      "max": 29,
+      "mean": 1.4735576923076923,
+      "median": 1.0,
+      "std": 1.4517141183053164,
+      "quartiles": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "classes_count": {
+      "min": 0,
+      "max": 7,
+      "mean": 0.03665865384615385,
+      "median": 0.0,
+      "std": 0.27600757518540375,
+      "quartiles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "imports": {
+      "total_unique_imports": 23,
+      "most_common_imports": {
+        "math": 110,
+        "collections": 107,
+        "itertools": 31,
+        "heapq": 30,
+        "typing": 20,
+        "bisect": 19,
+        "sys": 16,
+        "re": 11,
+        "functools": 9,
+        "operator": 8
+      },
+      "import_distribution": {
+        "collections": 107,
+        "itertools": 31,
+        "heapq": 30,
+        "math": 110,
+        "re": 11,
+        "typing": 20,
+        "bisect": 19,
+        "fractions": 4,
+        "operator": 8,
+        "sys": 16,
+        "threading": 1,
+        "random": 6,
+        "xml": 1,
+        "functools": 9,
+        "array": 2,
+        "copy": 1,
+        "os": 1,
+        "numpy": 8,
+        "unicodedata": 1,
+        "datetime": 1,
+        "string": 4,
+        "queue": 1,
+        "ipaddress": 1
+      }
+    },
+    "import_analysis": {
+      "most_common_imports": {
+        "math": 110,
+        "collections": 107,
+        "itertools": 31,
+        "heapq": 30,
+        "typing": 20,
+        "bisect": 19,
+        "sys": 16,
+        "re": 11,
+        "functools": 9,
+        "operator": 8
+      },
+      "total_unique_imports": 23,
+      "import_diversity": 0.058524173027989825
+    }
+  },
+  "test_quality": {
+    "test_coverage": {
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+        "avg_tests_per_sample": 7.165865384615385,
+        "median_tests_per_sample": 7.0,
+        "avg_tests_per_line": 0.5609621391243566,
+        "avg_tests_per_function": 6.23745987459619,
+        "test_count_std": 2.9995210234839833,
+        "line_coverage_ratio": 0.30546945049314717
+      },
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+        "avg_tests_per_sample": 7.2734375,
+        "median_tests_per_sample": 8.0,
+        "avg_tests_per_line": 0.5367068170319322,
+        "avg_tests_per_function": 6.248350897411377,
+        "test_count_std": 2.999758051728773,
+        "line_coverage_ratio": 0.3100550787754579
+      },
+      "Qwen/Qwen2.5-Coder-32B-Instruct": {
+        "avg_tests_per_sample": 7.197716346153846,
+        "median_tests_per_sample": 6.0,
+        "avg_tests_per_line": 0.5501008008370697,
+        "avg_tests_per_function": 6.317058621604688,
+        "test_count_std": 4.560408414612334,
+        "line_coverage_ratio": 0.3068272063532727
+      },
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+        "avg_tests_per_sample": 6.6358173076923075,
+        "median_tests_per_sample": 7.0,
+        "avg_tests_per_line": 0.5049607088566707,
+        "avg_tests_per_function": 5.781656142438739,
+        "test_count_std": 3.7906192793557065,
+        "line_coverage_ratio": 0.2828743435378506
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "avg_tests_per_sample": 8.588942307692308,
+        "median_tests_per_sample": 10.0,
+        "avg_tests_per_line": 0.6323027457796356,
+        "avg_tests_per_function": 7.446782262801255,
+        "test_count_std": 3.6609818432767303,
+        "line_coverage_ratio": 0.3661329576021519
+      }
+    },
+    "coverage_quality": {
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+        "coverage_score": 0.6109389009862943,
+        "test_density": 0.7165865384615385,
+        "function_coverage": 1.0,
+        "coverage_consistency": 0.5814153821639259,
+        "overall_score": 0.7174930601493719
+      },
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+        "coverage_score": 0.6201101575509158,
+        "test_density": 0.72734375,
+        "function_coverage": 1.0,
+        "coverage_consistency": 0.5875735439083964,
+        "overall_score": 0.7250045424112059
+      },
+      "Qwen/Qwen2.5-Coder-32B-Instruct": {
+        "coverage_score": 0.6136544127065454,
+        "test_density": 0.7197716346153846,
+        "function_coverage": 1.0,
+        "coverage_consistency": 0.3664089837258977,
+        "overall_score": 0.6980341538398233
+      },
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+        "coverage_score": 0.5657486870757013,
+        "test_density": 0.6635817307692308,
+        "function_coverage": 1.0,
+        "coverage_consistency": 0.4287637673566477,
+        "overall_score": 0.6682503707967145
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "coverage_score": 0.7322659152043038,
+        "test_density": 0.8588942307692309,
+        "function_coverage": 1.0,
+        "coverage_consistency": 0.5737563820870082,
+        "overall_score": 0.8079502735211915
+      }
+    }
+  },
+  "time_efficiency": {},
+  "advanced_insights": {
+    "clustering": {
+      "num_clusters": 2,
+      "clusters": {
+        "cluster_0": {
+          "size": 7120,
+          "characteristics": [
+            "Low complexity code",
+            "Low pass rate",
+            "Shorter code"
+          ],
+          "avg_complexity": 12.52879213483146,
+          "avg_code_lines": 17.366573033707866,
+          "avg_pass_rate": 0.45096195324466964,
+          "model_distribution": {
+            "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": 20.0,
+            "Qwen/Qwen2.5-Coder-32B-Instruct": 20.0,
+            "meta-llama/Llama-3.2-3B-Instruct-Turbo": 20.0,
+            "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 20.0,
+            "meta-llama/Llama-3.3-70B-Instruct-Turbo": 20.0
+          }
+        },
+        "cluster_1": {
+          "size": 1200,
+          "characteristics": [
+            "High complexity code",
+            "Low pass rate",
+            "Longer code"
+          ],
+          "avg_complexity": 37.84583333333333,
+          "avg_code_lines": 59.604166666666664,
+          "avg_pass_rate": 0.45140385309135306,
+          "model_distribution": {
+            "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": 20.0,
+            "Qwen/Qwen2.5-Coder-32B-Instruct": 20.0,
+            "meta-llama/Llama-3.2-3B-Instruct-Turbo": 20.0,
+            "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": 20.0,
+            "meta-llama/Llama-3.3-70B-Instruct-Turbo": 20.0
+          }
+        }
+      }
+    }
+  },
+  "statistical_validation": {
+    "passed": 7,
+    "failed": 6,
+    "total": 13,
+    "pass_rate": 0.5384615384615384,
+    "error_types": {
+      "AssertionError": 5,
+      "IndexError": 6,
+      "Expected Exception Not Raised": 2
+    },
+    "execution_time": null,
+    "test_cases": [],
+    "model_pass_rate_anova": {
+      "test": "ANOVA",
+      "statistic": 162.37489341769592,
+      "p_value": 4.792774561745521e-134,
+      "significant": 1,
+      "interpretation": "There is a statistically significant difference between models' pass rates."
+    },
+    "complexity_correlation_test": {
+      "test": "Pearson Correlation",
+      "complexity_correlation": -0.015048541185404829,
+      "complexity_p_value": 0.16990484696161406,
+      "complexity_significant": 0,
+      "lines_correlation": -0.015506900027511887,
+      "lines_p_value": 0.1572681390208621,
+      "lines_significant": 0,
+      "interpretation": "Code complexity has a non-significant negative correlation with pass rate."
+    },
+    "pairwise_model_comparisons": {
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8_vs_Qwen/Qwen2.5-Coder-32B-Instruct": {
+        "test": "Independent t-test",
+        "t_statistic": -4.81901913560542,
+        "p_value": 1.50720880091972e-06,
+        "significant": 1,
+        "better_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "mean_difference": 0.0582262262506536
+      },
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8_vs_meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": 10.798233183249144,
+        "p_value": 1.0133096988035846e-26,
+        "significant": 1,
+        "better_model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "mean_difference": 0.11857892374719292
+      },
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8_vs_meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": 11.881474142800888,
+        "p_value": 6.557355800292574e-32,
+        "significant": 1,
+        "better_model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "mean_difference": 0.13733691134665055
+      },
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8_vs_meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": -6.87445064476176,
+        "p_value": 7.469942505952114e-12,
+        "significant": 1,
+        "better_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "mean_difference": 0.07483397428559685
+      },
+      "Qwen/Qwen2.5-Coder-32B-Instruct_vs_meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": 16.11338082414737,
+        "p_value": 3.24006814088251e-56,
+        "significant": 1,
+        "better_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "mean_difference": 0.17680514999784652
+      },
+      "Qwen/Qwen2.5-Coder-32B-Instruct_vs_meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": 16.931008073980934,
+        "p_value": 1.0021422156587706e-61,
+        "significant": 1,
+        "better_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "mean_difference": 0.19556313759730415
+      },
+      "Qwen/Qwen2.5-Coder-32B-Instruct_vs_meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": -1.5268719312613448,
+        "p_value": 0.12689307801595745,
+        "significant": 0,
+        "better_model": "No significant difference",
+        "mean_difference": 0.016607748034943248
+      },
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo_vs_meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": 1.804848521714526,
+        "p_value": 0.07119011150222805,
+        "significant": 0,
+        "better_model": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+        "mean_difference": 0.018757987599457626
+      },
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo_vs_meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": -20.065784562382415,
+        "p_value": 1.2434234477706704e-84,
+        "significant": 1,
+        "better_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "mean_difference": 0.19341289803278977
+      },
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo_vs_meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "test": "Independent t-test",
+        "t_statistic": -20.614852904796045,
+        "p_value": 7.425444572003136e-89,
+        "significant": 1,
+        "better_model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "mean_difference": 0.2121708856322474
+      }
+    },
+    "error_distribution_test": {
+      "test": "Chi-squared",
+      "chi2_statistic": 16479.79862033739,
+      "p_value": 0.0,
+      "degrees_freedom": 64,
+      "significant": 1,
+      "interpretation": "Models differ significantly in their error type distributions."
+    }
+  },
+  "recommendations": {
+    "primary_recommendations": [
+      "The best overall performer is meta-llama/Llama-3.3-70B-Instruct-Turbo (score: 0.49) with a pass rate of 0.57 and consistency score of 0.50."
+    ],
+    "insights": [
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 performs optimally with code complexity between 3.0 and 107.0.",
+      "Qwen/Qwen2.5-Coder-32B-Instruct performs optimally with code complexity between 3.0 and 107.0.",
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo performs optimally with code complexity between 4.0 and 107.0.",
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo performs optimally with code complexity between 3.0 and 59.0.",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo performs optimally with code complexity between 3.0 and 75.0."
+    ],
+    "warnings": [
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.18). Consider using a different model for complex code.",
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.01). Consider using a different model for complex code.",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.06). Consider using a different model for complex code.",
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo shows high variability in performance (consistency score: 0.21). Results may be unpredictable.",
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 shows high variability in performance (consistency score: 0.27). Results may be unpredictable.",
+      "Qwen/Qwen2.5-Coder-32B-Instruct shows high variability in performance (consistency score: 0.35). Results may be unpredictable.",
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows high variability in performance (consistency score: 0.06). Results may be unpredictable.",
+      "meta-llama/Llama-3.2-3B-Instruct-Turbo shows low correlation with Pynguin results (0.03), suggesting potential quality issues.",
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 shows low correlation with Pynguin results (-0.01), suggesting potential quality issues.",
+      "Qwen/Qwen2.5-Coder-32B-Instruct shows low correlation with Pynguin results (0.01), suggesting potential quality issues.",
+      "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows low correlation with Pynguin results (0.02), suggesting potential quality issues.",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo shows low correlation with Pynguin results (0.07), suggesting potential quality issues."
+    ]
+  },
+  "visualization_files": {
+    "pass_rate_comparison": "llm_analysis_results_new/pass_rate_comparison.png",
+    "error_types": "llm_analysis_results_new/error_types.png",
+    "complexity_vs_pass_rate": "llm_analysis_results_new/complexity_vs_pass_rate.png",
+    "complexity_distribution": "llm_analysis_results_new/complexity_distribution.png",
+    "model_radar_chart": "llm_analysis_results_new/model_radar_chart.png",
+    "complexity_components": "llm_analysis_results_new/complexity_components.png",
+    "pass_rate_by_complexity": "llm_analysis_results_new/pass_rate_by_complexity.png"
+  }
+}

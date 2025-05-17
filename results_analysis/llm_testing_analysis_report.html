@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Testing Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2, h3 { color: #333366; }
+        .section { margin-bottom: 30px; border: 1px solid #eee; padding: 15px; border-radius: 5px; }
+        .visualizations { display: flex; flex-wrap: wrap; gap: 20px; }
+        .visualization { max-width: 100%; margin-bottom: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .highlight { background-color: #ffffcc; }
+        .warning { color: #cc3300; }
+        .insight { color: #006600; }
+        .recommendation { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>LLM Testing Analysis Report</h1>
+    
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <p>Dataset: 1664 samples analyzed across 5 models</p>
+        <p>Best performing model: <strong>meta-llama/Llama-3.3-70B-Instruct-Turbo</strong> (pass rate: 0.57)</p>
+        <p>Most consistent model: <strong>meta-llama/Llama-3.3-70B-Instruct-Turbo</strong> (consistency score: 0.5007472953681815)</p>
+        <p>Fastest model: <strong>meta-llama/Llama-3.2-3B-Instruct-Turbo</strong> (avg. execution time: N/As)</p>
+        <p>Average code complexity: 16.18</p>
+        <p>Average code lines: 23.5</p>
+    </div>
+    
+    <div class="section">
+        <h2>Model Comparison</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Pass Rate</th>
+                <th>Consistency</th>
+                <th>Execution Time</th>
+                <th>Total Tests</th>
+                <th>Overall Rank</th>
+            </tr>
+            <tr><td>meta-llama/Llama-3.3-70B-Instruct-Turbo</td><td>0.57</td><td>0.5007472953681815</td><td>N/A</td><td>14292</td><td>1</td></tr><tr><td>Qwen/Qwen2.5-Coder-32B-Instruct</td><td>0.52</td><td>0.34775977932484325</td><td>N/A</td><td>11977</td><td>2</td></tr><tr><td>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8</td><td>0.53</td><td>0.266942515759404</td><td>N/A</td><td>12103</td><td>3</td></tr><tr><td>meta-llama/Llama-3.2-3B-Instruct-Turbo</td><td>0.38</td><td>0.21277671123082753</td><td>N/A</td><td>11924</td><td>4</td></tr><tr><td>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo</td><td>0.39</td><td>0.062141717944312</td><td>N/A</td><td>11042</td><td>5</td></tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>Key Recommendations</h2>
+        <ul><li class='recommendation'>The best overall performer is meta-llama/Llama-3.3-70B-Instruct-Turbo (score: 0.49) with a pass rate of 0.57 and consistency score of 0.50.</li></ul>
+        <h3>Additional Insights</h3>
+        <ul><li class='insight'>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 performs optimally with code complexity between 3.0 and 107.0.</li><li class='insight'>Qwen/Qwen2.5-Coder-32B-Instruct performs optimally with code complexity between 3.0 and 107.0.</li><li class='insight'>meta-llama/Llama-3.2-3B-Instruct-Turbo performs optimally with code complexity between 4.0 and 107.0.</li><li class='insight'>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo performs optimally with code complexity between 3.0 and 59.0.</li><li class='insight'>meta-llama/Llama-3.3-70B-Instruct-Turbo performs optimally with code complexity between 3.0 and 75.0.</li></ul>
+        <h3>Warnings</h3>
+        <ul><li class='warning'>meta-llama/Llama-3.2-3B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.18). Consider using a different model for complex code.</li><li class='warning'>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.01). Consider using a different model for complex code.</li><li class='warning'>meta-llama/Llama-3.3-70B-Instruct-Turbo shows significant performance degradation with high complexity code (correlation: -0.06). Consider using a different model for complex code.</li><li class='warning'>meta-llama/Llama-3.2-3B-Instruct-Turbo shows high variability in performance (consistency score: 0.21). Results may be unpredictable.</li><li class='warning'>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 shows high variability in performance (consistency score: 0.27). Results may be unpredictable.</li><li class='warning'>Qwen/Qwen2.5-Coder-32B-Instruct shows high variability in performance (consistency score: 0.35). Results may be unpredictable.</li><li class='warning'>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows high variability in performance (consistency score: 0.06). Results may be unpredictable.</li><li class='warning'>meta-llama/Llama-3.2-3B-Instruct-Turbo shows low correlation with Pynguin results (0.03), suggesting potential quality issues.</li><li class='warning'>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 shows low correlation with Pynguin results (-0.01), suggesting potential quality issues.</li><li class='warning'>Qwen/Qwen2.5-Coder-32B-Instruct shows low correlation with Pynguin results (0.01), suggesting potential quality issues.</li><li class='warning'>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo shows low correlation with Pynguin results (0.02), suggesting potential quality issues.</li><li class='warning'>meta-llama/Llama-3.3-70B-Instruct-Turbo shows low correlation with Pynguin results (0.07), suggesting potential quality issues.</li></ul>
+    </div>
+    
+    <div class="section">
+        <h2>Visualizations</h2>
+        <div class="visualizations"><div class='visualization'><h3>Pass Rate Comparison</h3><img src='pass_rate_comparison.png' alt='pass_rate_comparison' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Error Types</h3><img src='error_types.png' alt='error_types' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Complexity Vs Pass Rate</h3><img src='complexity_vs_pass_rate.png' alt='complexity_vs_pass_rate' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Complexity Distribution</h3><img src='complexity_distribution.png' alt='complexity_distribution' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Model Radar Chart</h3><img src='model_radar_chart.png' alt='model_radar_chart' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Complexity Components</h3><img src='complexity_components.png' alt='complexity_components' style='max-width:100%; height:auto;'></div><div class='visualization'><h3>Pass Rate By Complexity</h3><img src='pass_rate_by_complexity.png' alt='pass_rate_by_complexity' style='max-width:100%; height:auto;'></div></div>
+    </div>
+    
+    <div class="section">
+        <h2>Error Analysis</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Error Rate</th>
+                <th>Most Common Error</th>
+                <th>Error Diversity</th>
+            </tr>
+            <tr><td>meta-llama/Llama-3.2-3B-Instruct-Turbo</td><td>0.95</td><td>TypeError</td><td>0.00</td></tr><tr><td>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8</td><td>1.06</td><td>NameError</td><td>0.00</td></tr><tr><td>Qwen/Qwen2.5-Coder-32B-Instruct</td><td>1.20</td><td>ValueError</td><td>0.00</td></tr><tr><td>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo</td><td>1.21</td><td>NameError</td><td>0.00</td></tr><tr><td>meta-llama/Llama-3.3-70B-Instruct-Turbo</td><td>0.74</td><td>ValueError</td><td>0.00</td></tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>Complexity Insights</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Best Performing Complexity</th>
+                <th>Complexity Correlation</th>
+                <th>Optimal Range</th>
+            </tr>
+            <tr><td>meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8</td><td>High</td><td>0.08117454444247668</td><td>3 - 107</td></tr><tr><td>Qwen/Qwen2.5-Coder-32B-Instruct</td><td>High</td><td>0.05263217110655147</td><td>3 - 107</td></tr><tr><td>meta-llama/Llama-3.2-3B-Instruct-Turbo</td><td>Low</td><td>-0.18329760624826208</td><td>4 - 107</td></tr><tr><td>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo</td><td>Medium-Low</td><td>-0.007352124629580721</td><td>3 - 59</td></tr><tr><td>meta-llama/Llama-3.3-70B-Instruct-Turbo</td><td>Low</td><td>-0.06343401447084622</td><td>3 - 75</td></tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>Statistical Validation</h2>
+        <h3>Key Statistical Findings</h3><ul><li class='highlight'>There is a statistically significant difference between models' pass rates.</li><li class=''>Code complexity has a non-significant negative correlation with pass rate.</li><li class='highlight'>Models differ significantly in their error type distributions.</li></ul>
+    </div>
+    
+    <footer>
+        <p>Report generated on 2025-05-17 20:19:25</p>
+    </footer>
+</body>
+</html>
